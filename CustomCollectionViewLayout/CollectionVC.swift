@@ -13,6 +13,8 @@ class CollectionVC: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        collectionView.backgroundColor = .white
+
         // register cell
         collectionView.register(
             UICollectionViewCell.self,
@@ -24,7 +26,7 @@ class CollectionVC: UICollectionViewController {
         _ collectionView: UICollectionView,
         numberOfItemsInSection section: Int
     ) -> Int {
-        return 10
+        return 100
     }
 
     override func collectionView(
@@ -36,7 +38,7 @@ class CollectionVC: UICollectionViewController {
             withReuseIdentifier: CollectionVC.cellReueseIdentifier,
             for: indexPath
         )
-        cell.backgroundColor = .red
+        cell.backgroundColor = .random
         return cell
     }
 }
