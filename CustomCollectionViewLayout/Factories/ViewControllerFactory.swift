@@ -29,4 +29,11 @@ class ViewControllerFactory {
         vc.vcFactory = self
         return vc
     }
+
+    func getStickyHeadersVC() -> UIViewController {
+        let layout = StickyHeadersLayout()
+        let vc = StickyHeadersVC(collectionViewLayout: layout)
+        vc.vcFactory = self
+        return vc
+    }
 }

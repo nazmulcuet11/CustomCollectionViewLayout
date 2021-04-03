@@ -27,5 +27,10 @@ class HomeVC: UIViewController, StoryboardBased {
         let vc = vcFactory.getScheduleVC()
         navigationController?.pushViewController(vc, animated: true)
     }
+
+    @IBAction func didTapStickyHeadersBtn(_ sender: Any) {
+        let vc = vcFactory.getStickyHeadersVC()
+        navigationController?.pushViewController(vc, animated: true)
+    }
 }
 

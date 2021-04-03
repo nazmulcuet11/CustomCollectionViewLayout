@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C2F0CA126189B61002313B0 /* StickyHeadersLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2F0CA026189B61002313B0 /* StickyHeadersLayoutAttributes.swift */; };
+		7C2F0CA526189B85002313B0 /* StickyHeadersLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2F0CA426189B85002313B0 /* StickyHeadersLayout.swift */; };
+		7C2F0CA826189B9F002313B0 /* StickyHeadersVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2F0CA726189B9F002313B0 /* StickyHeadersVC.swift */; };
+		7C2F0CAC26189BD8002313B0 /* StickyHeadersHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C2F0CAA26189BD8002313B0 /* StickyHeadersHeaderView.swift */; };
+		7C2F0CAD26189BD8002313B0 /* StickyHeadersHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C2F0CAB26189BD8002313B0 /* StickyHeadersHeaderView.xib */; };
 		7C55A59C26184BFB00956A09 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C55A59B26184BFB00956A09 /* ViewControllerFactory.swift */; };
 		7C55A5A026184C3100956A09 /* AppFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C55A59F26184C3100956A09 /* AppFactory.swift */; };
 		7C55A5A426184FC400956A09 /* Sessions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7C55A5A326184FC400956A09 /* Sessions.plist */; };
@@ -38,6 +43,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C2F0CA026189B61002313B0 /* StickyHeadersLayoutAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyHeadersLayoutAttributes.swift; sourceTree = "<group>"; };
+		7C2F0CA426189B85002313B0 /* StickyHeadersLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyHeadersLayout.swift; sourceTree = "<group>"; };
+		7C2F0CA726189B9F002313B0 /* StickyHeadersVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyHeadersVC.swift; sourceTree = "<group>"; };
+		7C2F0CAA26189BD8002313B0 /* StickyHeadersHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StickyHeadersHeaderView.swift; sourceTree = "<group>"; };
+		7C2F0CAB26189BD8002313B0 /* StickyHeadersHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StickyHeadersHeaderView.xib; sourceTree = "<group>"; };
 		7C55A59B26184BFB00956A09 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
 		7C55A59F26184C3100956A09 /* AppFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFactory.swift; sourceTree = "<group>"; };
 		7C55A5A326184FC400956A09 /* Sessions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Sessions.plist; sourceTree = "<group>"; };
@@ -81,6 +91,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C2F0C9F26189B32002313B0 /* StickyHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				7C2F0CAF26189BEA002313B0 /* Layouts */,
+				7C2F0CB026189C42002313B0 /* Views */,
+				7C2F0CB226189C4F002313B0 /* Controllers */,
+			);
+			path = StickyHeaders;
+			sourceTree = "<group>";
+		};
+		7C2F0CAF26189BEA002313B0 /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				7C2F0CA026189B61002313B0 /* StickyHeadersLayoutAttributes.swift */,
+				7C2F0CA426189B85002313B0 /* StickyHeadersLayout.swift */,
+			);
+			path = Layouts;
+			sourceTree = "<group>";
+		};
+		7C2F0CB026189C42002313B0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7C2F0CAB26189BD8002313B0 /* StickyHeadersHeaderView.xib */,
+				7C2F0CAA26189BD8002313B0 /* StickyHeadersHeaderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7C2F0CB226189C4F002313B0 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7C2F0CA726189B9F002313B0 /* StickyHeadersVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		7C55A59A26184BDD00956A09 /* Factories */ = {
 			isa = PBXGroup;
 			children = (
@@ -225,6 +271,7 @@
 				7CC921F62618485500912DFC /* Home */,
 				7CED0DAA2617943700FE4893 /* Pinterest */,
 				7CC921DA261841D500912DFC /* StretchyHeaders */,
+				7C2F0C9F26189B32002313B0 /* StickyHeaders */,
 				7CED0DBC2617A75B00FE4893 /* Extensions */,
 				7CC921FB2618498900912DFC /* Mixins */,
 				7CED0D9E26178F8900FE4893 /* Assets.xcassets */,
@@ -313,6 +360,7 @@
 				7C55A5B12618611B00956A09 /* ScheduleHeaderView.xib in Resources */,
 				7C55A5AD26185D4C00956A09 /* ScheduleCell.xib in Resources */,
 				7CC921D2261831A400912DFC /* PinterestCell.xib in Resources */,
+				7C2F0CAD26189BD8002313B0 /* StickyHeadersHeaderView.xib in Resources */,
 				7C55A5A426184FC400956A09 /* Sessions.plist in Resources */,
 				7CED0DA226178F8900FE4893 /* LaunchScreen.storyboard in Resources */,
 				7CED0D9F26178F8900FE4893 /* Assets.xcassets in Resources */,
@@ -330,6 +378,8 @@
 				7CC92202261849A200912DFC /* UITableView+Convenience.swift in Sources */,
 				7C55A5A726184FF900956A09 /* Session+DummyData.swift in Sources */,
 				7CED0DBF2617A79900FE4893 /* UIColor+Extension.swift in Sources */,
+				7C2F0CA526189B85002313B0 /* StickyHeadersLayout.swift in Sources */,
+				7C2F0CA826189B9F002313B0 /* StickyHeadersVC.swift in Sources */,
 				7C55A5A026184C3100956A09 /* AppFactory.swift in Sources */,
 				7CED0DB726179F2700FE4893 /* PinterestLayout.swift in Sources */,
 				7C55A5B92618786D00956A09 /* StretchyHeadersLayoutAttributes.swift in Sources */,
@@ -338,6 +388,7 @@
 				7CC921E62618468900912DFC /* ScheduleVC.swift in Sources */,
 				7CED0D9A26178F8800FE4893 /* HomeVC.swift in Sources */,
 				7CC921E42618468900912DFC /* ScheduleCell.swift in Sources */,
+				7C2F0CAC26189BD8002313B0 /* StickyHeadersHeaderView.swift in Sources */,
 				7C55A5B626186E0F00956A09 /* StretchyHeadersLayout.swift in Sources */,
 				7CC921D1261831A400912DFC /* PinterestCell.swift in Sources */,
 				7CC921D726183B5200912DFC /* PinterestLayoutAttributes.swift in Sources */,
@@ -347,6 +398,7 @@
 				7CED0D9626178F8800FE4893 /* AppDelegate.swift in Sources */,
 				7C55A59C26184BFB00956A09 /* ViewControllerFactory.swift in Sources */,
 				7CC92201261849A200912DFC /* NibBased.swift in Sources */,
+				7C2F0CA126189B61002313B0 /* StickyHeadersLayoutAttributes.swift in Sources */,
 				7CC921E32618468900912DFC /* Session.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
