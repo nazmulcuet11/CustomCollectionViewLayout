@@ -8,6 +8,8 @@
 import UIKit
 
 class StretchyHeadersLayout: UICollectionViewFlowLayout {
+    var maximumHeaderHeight: CGFloat = 0
+
     override func shouldInvalidateLayout(
         forBoundsChange newBounds: CGRect
     ) -> Bool {
@@ -15,14 +17,14 @@ class StretchyHeadersLayout: UICollectionViewFlowLayout {
     }
 
     override class var layoutAttributesClass: AnyClass {
-        return StretchyHeaderLayoutAttributes.self
+        return StretchyHeadersLayoutAttributes.self
     }
 
     override func layoutAttributesForElements(
         in rect: CGRect
     ) -> [UICollectionViewLayoutAttributes]? {
 
-        guard let attributesList = super.layoutAttributesForElements(in: rect) as? [StretchyHeaderLayoutAttributes],
+        guard let attributesList = super.layoutAttributesForElements(in: rect) as? [StretchyHeadersLayoutAttributes],
               let collectionView = collectionView else {
             return nil
         }
@@ -41,12 +43,22 @@ class StretchyHeadersLayout: UICollectionViewFlowLayout {
             if let kind = attributes.representedElementKind,
                kind == UICollectionView.elementKindSectionHeader {
 
-                var frame = attributes.frame
-                frame.size.height = max(0, headerReferenceSize.height + deltaY)
-                frame.origin.y = frame.minY - deltaY
+                let frameHeight = headerReferenceSize.height + deltaY
 
-                attributes.frame = frame
-                attributes.deltaY = deltaY
+                var adjustedDeltaY = deltaY
+                var adjustedFrameHeight = frameHeight
+                if frameHeight > maximumHeaderHeight {
+                    let delta = frameHeight - maximumHeaderHeight
+                    adjustedDeltaY -= delta
+                    adjustedFrameHeight -= delta
+                }
+
+                var adjustedFrame = attributes.frame
+                adjustedFrame.size.height = adjustedFrameHeight
+                adjustedFrame.origin.y = adjustedFrame.minY - deltaY
+
+                attributes.frame = adjustedFrame
+                attributes.deltaY = adjustedDeltaY
             }
         }
 

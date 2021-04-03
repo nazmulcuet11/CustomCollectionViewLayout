@@ -15,7 +15,7 @@
 		7C55A5AD26185D4C00956A09 /* ScheduleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C55A5AC26185D4C00956A09 /* ScheduleCell.xib */; };
 		7C55A5B12618611B00956A09 /* ScheduleHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C55A5B02618611B00956A09 /* ScheduleHeaderView.xib */; };
 		7C55A5B626186E0F00956A09 /* StretchyHeadersLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C55A5B526186E0F00956A09 /* StretchyHeadersLayout.swift */; };
-		7C55A5B92618786D00956A09 /* StretchyHeaderLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C55A5B82618786D00956A09 /* StretchyHeaderLayoutAttributes.swift */; };
+		7C55A5B92618786D00956A09 /* StretchyHeadersLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C55A5B82618786D00956A09 /* StretchyHeadersLayoutAttributes.swift */; };
 		7CC921CD2618317E00912DFC /* PinterestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC921CC2618317E00912DFC /* PinterestVC.swift */; };
 		7CC921D1261831A400912DFC /* PinterestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC921CF261831A400912DFC /* PinterestCell.swift */; };
 		7CC921D2261831A400912DFC /* PinterestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CC921D0261831A400912DFC /* PinterestCell.xib */; };
@@ -46,7 +46,7 @@
 		7C55A5AC26185D4C00956A09 /* ScheduleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScheduleCell.xib; sourceTree = "<group>"; };
 		7C55A5B02618611B00956A09 /* ScheduleHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScheduleHeaderView.xib; sourceTree = "<group>"; };
 		7C55A5B526186E0F00956A09 /* StretchyHeadersLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchyHeadersLayout.swift; sourceTree = "<group>"; };
-		7C55A5B82618786D00956A09 /* StretchyHeaderLayoutAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchyHeaderLayoutAttributes.swift; sourceTree = "<group>"; };
+		7C55A5B82618786D00956A09 /* StretchyHeadersLayoutAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchyHeadersLayoutAttributes.swift; sourceTree = "<group>"; };
 		7CC921CC2618317E00912DFC /* PinterestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestVC.swift; sourceTree = "<group>"; };
 		7CC921CF261831A400912DFC /* PinterestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestCell.swift; sourceTree = "<group>"; };
 		7CC921D0261831A400912DFC /* PinterestCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PinterestCell.xib; sourceTree = "<group>"; };
@@ -140,7 +140,7 @@
 		7CC921F02618479200912DFC /* Layouts */ = {
 			isa = PBXGroup;
 			children = (
-				7C55A5B82618786D00956A09 /* StretchyHeaderLayoutAttributes.swift */,
+				7C55A5B82618786D00956A09 /* StretchyHeadersLayoutAttributes.swift */,
 				7C55A5B526186E0F00956A09 /* StretchyHeadersLayout.swift */,
 			);
 			path = Layouts;
@@ -332,7 +332,7 @@
 				7CED0DBF2617A79900FE4893 /* UIColor+Extension.swift in Sources */,
 				7C55A5A026184C3100956A09 /* AppFactory.swift in Sources */,
 				7CED0DB726179F2700FE4893 /* PinterestLayout.swift in Sources */,
-				7C55A5B92618786D00956A09 /* StretchyHeaderLayoutAttributes.swift in Sources */,
+				7C55A5B92618786D00956A09 /* StretchyHeadersLayoutAttributes.swift in Sources */,
 				7C55A5AA26185C3900956A09 /* UICollectionView+Convenience.swift in Sources */,
 				7CC921CD2618317E00912DFC /* PinterestVC.swift in Sources */,
 				7CC921E62618468900912DFC /* ScheduleVC.swift in Sources */,

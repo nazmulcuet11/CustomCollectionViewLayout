@@ -7,17 +7,17 @@
 
 import UIKit
 
-class StretchyHeaderLayoutAttributes: UICollectionViewLayoutAttributes {
+class StretchyHeadersLayoutAttributes: UICollectionViewLayoutAttributes {
     var deltaY: CGFloat = 0
 
     override func copy(with zone: NSZone? = nil) -> Any {
-        let copy = super.copy(with: zone) as! StretchyHeaderLayoutAttributes
+        let copy = super.copy(with: zone) as! StretchyHeadersLayoutAttributes
         copy.deltaY = deltaY
         return copy
     }
 
     override func isEqual(_ object: Any?) -> Bool {
-        guard let object = object as? StretchyHeaderLayoutAttributes else {
+        guard let object = object as? StretchyHeadersLayoutAttributes else {
             return false
         }
 

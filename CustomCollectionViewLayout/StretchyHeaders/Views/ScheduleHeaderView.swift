@@ -29,7 +29,7 @@ class ScheduleHeaderView: UICollectionReusableView {
     override func apply(_ layoutAttributes: UICollectionViewLayoutAttributes) {
         super.apply(layoutAttributes)
 
-        guard let layoutAttributes = layoutAttributes as? StretchyHeaderLayoutAttributes
+        guard let layoutAttributes = layoutAttributes as? StretchyHeadersLayoutAttributes
         else {
             return
         }
