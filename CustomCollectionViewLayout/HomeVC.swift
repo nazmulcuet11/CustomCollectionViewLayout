@@ -15,8 +15,9 @@ class HomeVC: UIViewController {
     }
 
     @IBAction func didTapPinterestBtn(_ sender: Any) {
-        let vc = CollectionVC(collectionViewLayout: PinterestLayout())
-        vc.navigationItem.title = "Pinterest"
+        let layout = PinterestLayout()
+        let vc = PinterestVC(collectionViewLayout: layout)
+        layout.delegate = vc
         navigationController?.pushViewController(vc, animated: true)
     }
 }
