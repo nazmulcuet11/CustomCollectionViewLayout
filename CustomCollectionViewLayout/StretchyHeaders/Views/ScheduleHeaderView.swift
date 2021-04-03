@@ -34,7 +34,14 @@ class ScheduleHeaderView: UICollectionReusableView {
             return
         }
 
-        backgroundImageViewHeightLC.constant = backgroundImageViewHeight - layoutAttributes.deltaY
-        foregroundImageViewHeightLC.constant = foregroundImageViewHeight + layoutAttributes.deltaY
+        let newBackgroundImageViewHeight = backgroundImageViewHeight - layoutAttributes.deltaY
+        if backgroundImageViewHeightLC.constant != newBackgroundImageViewHeight {
+            backgroundImageViewHeightLC.constant = newBackgroundImageViewHeight
+        }
+
+        let newForegroundImageViewHeight = foregroundImageViewHeight + layoutAttributes.deltaY
+        if foregroundImageViewHeightLC.constant != newForegroundImageViewHeight {
+            foregroundImageViewHeightLC.constant = newForegroundImageViewHeight
+        }
     }
 }
