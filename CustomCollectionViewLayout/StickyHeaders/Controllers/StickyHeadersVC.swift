@@ -28,7 +28,7 @@ class StickyHeadersVC: UICollectionViewController, UICollectionViewDelegateFlowL
         if let layout = collectionViewLayout as? StickyHeadersLayout {
             layout.minimumInteritemSpacing = layout.padding
             layout.minimumLineSpacing = layout.padding
-//            layout.sectionHeadersPinToVisibleBounds = true
+            layout.sectionHeadersPinToVisibleBounds = true
 
             let width = collectionView.bounds.width
             layout.headerReferenceSize = CGSize(width: width, height: 60.0)

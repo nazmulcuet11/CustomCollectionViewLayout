@@ -11,6 +11,7 @@ class StickyHeadersLayout: UICollectionViewFlowLayout {
     let numberOfColums = 3
     let padding: CGFloat = 2.0
 
+    /*
     override func shouldInvalidateLayout(
         forBoundsChange newBounds: CGRect
     ) -> Bool {
@@ -65,5 +66,5 @@ class StickyHeadersLayout: UICollectionViewFlowLayout {
 
         return attributesList
     }
-
+    */
 }
