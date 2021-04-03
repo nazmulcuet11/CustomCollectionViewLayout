@@ -24,7 +24,7 @@ class ViewControllerFactory {
     }
 
     func getScheduleVC() -> UIViewController {
-        let layout = UICollectionViewFlowLayout()
+        let layout = StretchyHeadersLayout()
         let vc = ScheduleVC(collectionViewLayout: layout)
         vc.vcFactory = self
         return vc

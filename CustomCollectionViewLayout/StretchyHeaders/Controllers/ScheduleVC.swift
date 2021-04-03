@@ -34,7 +34,7 @@ class ScheduleVC: UICollectionViewController {
         let width = collectionView.bounds.width
         if let layout = collectionViewLayout as? UICollectionViewFlowLayout {
             layout.itemSize = CGSize(width: width, height: 62)
-            layout.headerReferenceSize = CGSize(width: width, height: 200)
+            layout.headerReferenceSize = CGSize(width: width, height: 180)
         }
     }
 }
