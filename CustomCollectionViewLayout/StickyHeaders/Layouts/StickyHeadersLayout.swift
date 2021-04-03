@@ -57,7 +57,16 @@ class StickyHeadersLayout: UICollectionViewFlowLayout {
             let minY = attributesForFirstItemInSection.frame.minY - adjustedFrame.height - sectionInset.top
             let maxY = attributesForLastItemInSection.frame.maxY - adjustedFrame.height + sectionInset.bottom
 
+//            var y: CGFloat = 0
+//            if minY > offsetY {
+//                y = minY
+//            } else if maxY < offsetY {
+//                y = maxY
+//            } else {
+//                y = offsetY
+//            }
             let y = min(maxY, max(minY, offsetY))
+            
             adjustedFrame.origin.y = y
 
             attributes.frame = adjustedFrame
