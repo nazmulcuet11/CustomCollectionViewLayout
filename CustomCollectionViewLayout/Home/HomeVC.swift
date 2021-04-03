@@ -7,7 +7,11 @@
 
 import UIKit
 
-class HomeVC: UIViewController {
+class HomeVC: UIViewController, StoryboardBased {
+
+    // MARK: - Dependency
+    
+    var vcFactory: ViewControllerFactory!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -15,9 +19,12 @@ class HomeVC: UIViewController {
     }
 
     @IBAction func didTapPinterestBtn(_ sender: Any) {
-        let layout = PinterestLayout()
-        let vc = PinterestVC(collectionViewLayout: layout)
-        layout.delegate = vc
+        let vc = vcFactory.getPinterestVC()
+        navigationController?.pushViewController(vc, animated: true)
+    }
+
+    @IBAction func didTapStretchyHeadersBtn(_ sender: Any) {
+        let vc = vcFactory.getScheduleVC()
         navigationController?.pushViewController(vc, animated: true)
     }
 }

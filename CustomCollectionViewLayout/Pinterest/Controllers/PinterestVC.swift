@@ -9,6 +9,10 @@ import UIKit
 
 class PinterestVC: UICollectionViewController {
 
+    // MARK: - Dependency
+
+    var vcFactory: ViewControllerFactory!
+
     private var photoHeights = [CGFloat]()
 
     override func viewDidLoad() {
@@ -17,11 +21,7 @@ class PinterestVC: UICollectionViewController {
         navigationItem.title = "Pinterest"
 
         // Register cell classes
-        let cellNib = UINib(nibName: "\(PinterestCell.self)", bundle: nil)
-        collectionView.register(
-            cellNib,
-            forCellWithReuseIdentifier: PinterestCell.resuseId
-        )
+        collectionView.registerNibCell(PinterestCell.self)
 
         calculateDummyPhotoHeights()
     }
@@ -39,10 +39,7 @@ class PinterestVC: UICollectionViewController {
         _ collectionView: UICollectionView,
         cellForItemAt indexPath: IndexPath
     ) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(
-            withReuseIdentifier: PinterestCell.resuseId,
-            for: indexPath
-        ) as! PinterestCell
+        let cell = collectionView.dequeueReusableCell(PinterestCell.self, for: indexPath)
         return cell
     }
 
@@ -59,11 +56,19 @@ class PinterestVC: UICollectionViewController {
 }
 
 extension PinterestVC: PinterestLayoutDelegate {
-    func collectionView(_ collectionView: UICollectionView, heightForPhotoAt indexPath: IndexPath, with width: CGFloat) -> CGFloat {
+    func collectionView(
+        _ collectionView: UICollectionView,
+        heightForPhotoAt indexPath: IndexPath,
+        with width: CGFloat
+    ) -> CGFloat {
         photoHeights[indexPath.item]
     }
 
-    func collectionView(_ collectionView: UICollectionView, heightForAnnotationAt indexPath: IndexPath, with width: CGFloat) -> CGFloat {
+    func collectionView(
+        _ collectionView: UICollectionView,
+        heightForAnnotationAt indexPath: IndexPath,
+        with width: CGFloat
+    ) -> CGFloat {
         return 60
     }
 }

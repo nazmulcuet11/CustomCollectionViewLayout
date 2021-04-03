@@ -7,14 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C55A59C26184BFB00956A09 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C55A59B26184BFB00956A09 /* ViewControllerFactory.swift */; };
+		7C55A5A026184C3100956A09 /* AppFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C55A59F26184C3100956A09 /* AppFactory.swift */; };
+		7C55A5A426184FC400956A09 /* Sessions.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7C55A5A326184FC400956A09 /* Sessions.plist */; };
+		7C55A5A726184FF900956A09 /* Session+DummyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C55A5A626184FF900956A09 /* Session+DummyData.swift */; };
+		7C55A5AA26185C3900956A09 /* UICollectionView+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C55A5A926185C3900956A09 /* UICollectionView+Convenience.swift */; };
+		7C55A5AD26185D4C00956A09 /* ScheduleCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C55A5AC26185D4C00956A09 /* ScheduleCell.xib */; };
+		7C55A5B12618611B00956A09 /* ScheduleHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7C55A5B02618611B00956A09 /* ScheduleHeaderView.xib */; };
 		7CC921CD2618317E00912DFC /* PinterestVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC921CC2618317E00912DFC /* PinterestVC.swift */; };
 		7CC921D1261831A400912DFC /* PinterestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC921CF261831A400912DFC /* PinterestCell.swift */; };
 		7CC921D2261831A400912DFC /* PinterestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7CC921D0261831A400912DFC /* PinterestCell.xib */; };
 		7CC921D726183B5200912DFC /* PinterestLayoutAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC921D626183B5200912DFC /* PinterestLayoutAttributes.swift */; };
+		7CC921E32618468900912DFC /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC921DF2618468900912DFC /* Session.swift */; };
+		7CC921E42618468900912DFC /* ScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC921E02618468900912DFC /* ScheduleCell.swift */; };
+		7CC921E52618468900912DFC /* ScheduleHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC921E12618468900912DFC /* ScheduleHeaderView.swift */; };
+		7CC921E62618468900912DFC /* ScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC921E22618468900912DFC /* ScheduleVC.swift */; };
+		7CC92200261849A200912DFC /* StoryboardBased.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC921FC261849A200912DFC /* StoryboardBased.swift */; };
+		7CC92201261849A200912DFC /* NibBased.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC921FD261849A200912DFC /* NibBased.swift */; };
+		7CC92202261849A200912DFC /* UITableView+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC921FE261849A200912DFC /* UITableView+Convenience.swift */; };
+		7CC92203261849A200912DFC /* ReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC921FF261849A200912DFC /* ReusableView.swift */; };
 		7CED0D9626178F8800FE4893 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CED0D9526178F8800FE4893 /* AppDelegate.swift */; };
-		7CED0D9826178F8800FE4893 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CED0D9726178F8800FE4893 /* SceneDelegate.swift */; };
 		7CED0D9A26178F8800FE4893 /* HomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CED0D9926178F8800FE4893 /* HomeVC.swift */; };
-		7CED0D9D26178F8800FE4893 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CED0D9B26178F8800FE4893 /* Main.storyboard */; };
+		7CED0D9D26178F8800FE4893 /* HomeVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CED0D9B26178F8800FE4893 /* HomeVC.storyboard */; };
 		7CED0D9F26178F8900FE4893 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CED0D9E26178F8900FE4893 /* Assets.xcassets */; };
 		7CED0DA226178F8900FE4893 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CED0DA026178F8900FE4893 /* LaunchScreen.storyboard */; };
 		7CED0DB726179F2700FE4893 /* PinterestLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CED0DB626179F2700FE4893 /* PinterestLayout.swift */; };
@@ -22,15 +36,29 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7C55A59B26184BFB00956A09 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
+		7C55A59F26184C3100956A09 /* AppFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFactory.swift; sourceTree = "<group>"; };
+		7C55A5A326184FC400956A09 /* Sessions.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Sessions.plist; sourceTree = "<group>"; };
+		7C55A5A626184FF900956A09 /* Session+DummyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Session+DummyData.swift"; sourceTree = "<group>"; };
+		7C55A5A926185C3900956A09 /* UICollectionView+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Convenience.swift"; sourceTree = "<group>"; };
+		7C55A5AC26185D4C00956A09 /* ScheduleCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScheduleCell.xib; sourceTree = "<group>"; };
+		7C55A5B02618611B00956A09 /* ScheduleHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScheduleHeaderView.xib; sourceTree = "<group>"; };
 		7CC921CC2618317E00912DFC /* PinterestVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestVC.swift; sourceTree = "<group>"; };
 		7CC921CF261831A400912DFC /* PinterestCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestCell.swift; sourceTree = "<group>"; };
 		7CC921D0261831A400912DFC /* PinterestCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PinterestCell.xib; sourceTree = "<group>"; };
 		7CC921D626183B5200912DFC /* PinterestLayoutAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PinterestLayoutAttributes.swift; sourceTree = "<group>"; };
+		7CC921DF2618468900912DFC /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		7CC921E02618468900912DFC /* ScheduleCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleCell.swift; sourceTree = "<group>"; };
+		7CC921E12618468900912DFC /* ScheduleHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleHeaderView.swift; sourceTree = "<group>"; };
+		7CC921E22618468900912DFC /* ScheduleVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScheduleVC.swift; sourceTree = "<group>"; };
+		7CC921FC261849A200912DFC /* StoryboardBased.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryboardBased.swift; sourceTree = "<group>"; };
+		7CC921FD261849A200912DFC /* NibBased.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibBased.swift; sourceTree = "<group>"; };
+		7CC921FE261849A200912DFC /* UITableView+Convenience.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+Convenience.swift"; sourceTree = "<group>"; };
+		7CC921FF261849A200912DFC /* ReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReusableView.swift; sourceTree = "<group>"; };
 		7CED0D9226178F8800FE4893 /* CustomCollectionViewLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomCollectionViewLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CED0D9526178F8800FE4893 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		7CED0D9726178F8800FE4893 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7CED0D9926178F8800FE4893 /* HomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeVC.swift; sourceTree = "<group>"; };
-		7CED0D9C26178F8800FE4893 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7CED0D9C26178F8800FE4893 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/HomeVC.storyboard; sourceTree = "<group>"; };
 		7CED0D9E26178F8900FE4893 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CED0DA126178F8900FE4893 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7CED0DA326178F8900FE4893 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +77,123 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7C55A59A26184BDD00956A09 /* Factories */ = {
+			isa = PBXGroup;
+			children = (
+				7C55A59F26184C3100956A09 /* AppFactory.swift */,
+				7C55A59B26184BFB00956A09 /* ViewControllerFactory.swift */,
+			);
+			path = Factories;
+			sourceTree = "<group>";
+		};
+		7CC921DA261841D500912DFC /* StretchyHeaders */ = {
+			isa = PBXGroup;
+			children = (
+				7CC921EF2618478C00912DFC /* Models */,
+				7CC921F02618479200912DFC /* Layouts */,
+				7CC921F2261847A000912DFC /* Views */,
+				7CC921F3261847A700912DFC /* Controllers */,
+			);
+			path = StretchyHeaders;
+			sourceTree = "<group>";
+		};
+		7CC921EC2618474000912DFC /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				7CC921D626183B5200912DFC /* PinterestLayoutAttributes.swift */,
+				7CED0DB626179F2700FE4893 /* PinterestLayout.swift */,
+			);
+			path = Layouts;
+			sourceTree = "<group>";
+		};
+		7CC921ED2618475C00912DFC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7CC921D0261831A400912DFC /* PinterestCell.xib */,
+				7CC921CF261831A400912DFC /* PinterestCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7CC921EE2618477C00912DFC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7CC921CC2618317E00912DFC /* PinterestVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7CC921EF2618478C00912DFC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7CC921DF2618468900912DFC /* Session.swift */,
+				7C55A5A326184FC400956A09 /* Sessions.plist */,
+				7C55A5A626184FF900956A09 /* Session+DummyData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7CC921F02618479200912DFC /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Layouts;
+			sourceTree = "<group>";
+		};
+		7CC921F2261847A000912DFC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7C55A5AC26185D4C00956A09 /* ScheduleCell.xib */,
+				7CC921E02618468900912DFC /* ScheduleCell.swift */,
+				7C55A5B02618611B00956A09 /* ScheduleHeaderView.xib */,
+				7CC921E12618468900912DFC /* ScheduleHeaderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7CC921F3261847A700912DFC /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7CC921E22618468900912DFC /* ScheduleVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7CC921F52618483A00912DFC /* App */ = {
+			isa = PBXGroup;
+			children = (
+				7CED0D9526178F8800FE4893 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		7CC921F62618485500912DFC /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7CED0D9926178F8800FE4893 /* HomeVC.swift */,
+				7CED0D9B26178F8800FE4893 /* HomeVC.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		7CC921F82618488500912DFC /* Launch */ = {
+			isa = PBXGroup;
+			children = (
+				7CED0DA026178F8900FE4893 /* LaunchScreen.storyboard */,
+			);
+			path = Launch;
+			sourceTree = "<group>";
+		};
+		7CC921FB2618498900912DFC /* Mixins */ = {
+			isa = PBXGroup;
+			children = (
+				7CC921FD261849A200912DFC /* NibBased.swift */,
+				7CC921FF261849A200912DFC /* ReusableView.swift */,
+				7CC921FC261849A200912DFC /* StoryboardBased.swift */,
+			);
+			path = Mixins;
+			sourceTree = "<group>";
+		};
 		7CED0D8926178F8800FE4893 = {
 			isa = PBXGroup;
 			children = (
@@ -68,14 +213,15 @@
 		7CED0D9426178F8800FE4893 /* CustomCollectionViewLayout */ = {
 			isa = PBXGroup;
 			children = (
-				7CED0DBC2617A75B00FE4893 /* Extensions */,
+				7CC921F52618483A00912DFC /* App */,
+				7C55A59A26184BDD00956A09 /* Factories */,
+				7CC921F82618488500912DFC /* Launch */,
+				7CC921F62618485500912DFC /* Home */,
 				7CED0DAA2617943700FE4893 /* Pinterest */,
-				7CED0D9526178F8800FE4893 /* AppDelegate.swift */,
-				7CED0D9726178F8800FE4893 /* SceneDelegate.swift */,
-				7CED0D9926178F8800FE4893 /* HomeVC.swift */,
-				7CED0D9B26178F8800FE4893 /* Main.storyboard */,
+				7CC921DA261841D500912DFC /* StretchyHeaders */,
+				7CED0DBC2617A75B00FE4893 /* Extensions */,
+				7CC921FB2618498900912DFC /* Mixins */,
 				7CED0D9E26178F8900FE4893 /* Assets.xcassets */,
-				7CED0DA026178F8900FE4893 /* LaunchScreen.storyboard */,
 				7CED0DA326178F8900FE4893 /* Info.plist */,
 			);
 			path = CustomCollectionViewLayout;
@@ -84,11 +230,9 @@
 		7CED0DAA2617943700FE4893 /* Pinterest */ = {
 			isa = PBXGroup;
 			children = (
-				7CC921D626183B5200912DFC /* PinterestLayoutAttributes.swift */,
-				7CED0DB626179F2700FE4893 /* PinterestLayout.swift */,
-				7CC921D0261831A400912DFC /* PinterestCell.xib */,
-				7CC921CF261831A400912DFC /* PinterestCell.swift */,
-				7CC921CC2618317E00912DFC /* PinterestVC.swift */,
+				7CC921EC2618474000912DFC /* Layouts */,
+				7CC921ED2618475C00912DFC /* Views */,
+				7CC921EE2618477C00912DFC /* Controllers */,
 			);
 			path = Pinterest;
 			sourceTree = "<group>";
@@ -97,6 +241,8 @@
 			isa = PBXGroup;
 			children = (
 				7CED0DBE2617A79900FE4893 /* UIColor+Extension.swift */,
+				7CC921FE261849A200912DFC /* UITableView+Convenience.swift */,
+				7C55A5A926185C3900956A09 /* UICollectionView+Convenience.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -158,10 +304,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7C55A5B12618611B00956A09 /* ScheduleHeaderView.xib in Resources */,
+				7C55A5AD26185D4C00956A09 /* ScheduleCell.xib in Resources */,
 				7CC921D2261831A400912DFC /* PinterestCell.xib in Resources */,
+				7C55A5A426184FC400956A09 /* Sessions.plist in Resources */,
 				7CED0DA226178F8900FE4893 /* LaunchScreen.storyboard in Resources */,
 				7CED0D9F26178F8900FE4893 /* Assets.xcassets in Resources */,
-				7CED0D9D26178F8800FE4893 /* Main.storyboard in Resources */,
+				7CED0D9D26178F8800FE4893 /* HomeVC.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -172,26 +321,37 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7CC92202261849A200912DFC /* UITableView+Convenience.swift in Sources */,
+				7C55A5A726184FF900956A09 /* Session+DummyData.swift in Sources */,
 				7CED0DBF2617A79900FE4893 /* UIColor+Extension.swift in Sources */,
+				7C55A5A026184C3100956A09 /* AppFactory.swift in Sources */,
 				7CED0DB726179F2700FE4893 /* PinterestLayout.swift in Sources */,
+				7C55A5AA26185C3900956A09 /* UICollectionView+Convenience.swift in Sources */,
 				7CC921CD2618317E00912DFC /* PinterestVC.swift in Sources */,
+				7CC921E62618468900912DFC /* ScheduleVC.swift in Sources */,
 				7CED0D9A26178F8800FE4893 /* HomeVC.swift in Sources */,
+				7CC921E42618468900912DFC /* ScheduleCell.swift in Sources */,
 				7CC921D1261831A400912DFC /* PinterestCell.swift in Sources */,
 				7CC921D726183B5200912DFC /* PinterestLayoutAttributes.swift in Sources */,
+				7CC921E52618468900912DFC /* ScheduleHeaderView.swift in Sources */,
+				7CC92200261849A200912DFC /* StoryboardBased.swift in Sources */,
+				7CC92203261849A200912DFC /* ReusableView.swift in Sources */,
 				7CED0D9626178F8800FE4893 /* AppDelegate.swift in Sources */,
-				7CED0D9826178F8800FE4893 /* SceneDelegate.swift in Sources */,
+				7C55A59C26184BFB00956A09 /* ViewControllerFactory.swift in Sources */,
+				7CC92201261849A200912DFC /* NibBased.swift in Sources */,
+				7CC921E32618468900912DFC /* Session.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		7CED0D9B26178F8800FE4893 /* Main.storyboard */ = {
+		7CED0D9B26178F8800FE4893 /* HomeVC.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				7CED0D9C26178F8800FE4893 /* Base */,
 			);
-			name = Main.storyboard;
+			name = HomeVC.storyboard;
 			sourceTree = "<group>";
 		};
 		7CED0DA026178F8900FE4893 /* LaunchScreen.storyboard */ = {

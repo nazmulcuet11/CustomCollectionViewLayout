@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ScheduleHeaderView" id="9Zc-XQ-jmz" customClass="ScheduleHeaderView" customModule="CustomCollectionViewLayout" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="655" height="404"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Header" translatesAutoresizingMaskIntoConstraints="NO" id="CH9-vt-GEe">
+                    <rect key="frame" x="0.0" y="0.0" width="655" height="404"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logo" translatesAutoresizingMaskIntoConstraints="NO" id="IKz-YO-baa">
+                    <rect key="frame" x="267.5" y="142" width="120" height="120"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="120" id="3P7-Gg-O22"/>
+                        <constraint firstAttribute="width" constant="120" id="bcB-ZQ-S1C"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="IZ4-j3-y5i"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="CH9-vt-GEe" secondAttribute="trailing" id="A1a-CU-ZN8"/>
+                <constraint firstItem="CH9-vt-GEe" firstAttribute="leading" secondItem="9Zc-XQ-jmz" secondAttribute="leading" id="O5g-DM-MFU"/>
+                <constraint firstAttribute="centerY" secondItem="IKz-YO-baa" secondAttribute="centerY" id="YSD-eh-vyE"/>
+                <constraint firstItem="CH9-vt-GEe" firstAttribute="top" secondItem="9Zc-XQ-jmz" secondAttribute="top" id="ZHQ-Mu-hyp"/>
+                <constraint firstAttribute="bottom" secondItem="CH9-vt-GEe" secondAttribute="bottom" id="gLw-1D-jEx"/>
+                <constraint firstAttribute="centerX" secondItem="IKz-YO-baa" secondAttribute="centerX" id="rmB-Pn-hQw"/>
+            </constraints>
+            <connections>
+                <outlet property="backgroundImageView" destination="CH9-vt-GEe" id="PyE-cZ-MZi"/>
+                <outlet property="foregroundImageView" destination="IKz-YO-baa" id="ZCh-Wk-AKt"/>
+            </connections>
+            <point key="canvasLocation" x="228.2608695652174" y="-226.33928571428569"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="Header" width="600" height="600"/>
+        <image name="Logo" width="240" height="240"/>
+    </resources>
+</document>

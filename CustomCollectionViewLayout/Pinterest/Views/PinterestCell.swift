@@ -9,8 +9,6 @@ import UIKit
 
 class PinterestCell: UICollectionViewCell {
 
-    static let resuseId = "\(String(describing: self.self))"
-
     @IBOutlet weak var cellContainerView: UIView!
 
     @IBOutlet weak var imageView: UIImageView!
