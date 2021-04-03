@@ -53,8 +53,8 @@ class StickyHeadersLayout: UICollectionViewFlowLayout {
             let offsetY = collectionView.contentOffset.y + collectionView.adjustedContentInset.top
             var adjustedFrame = attributes.frame
 
-            let minY = attributesForFirstItemInSection.frame.minY - adjustedFrame.height - padding
-            let maxY = attributesForLastItemInSection.frame.maxY - adjustedFrame.height + padding
+            let minY = attributesForFirstItemInSection.frame.minY - adjustedFrame.height - sectionInset.top
+            let maxY = attributesForLastItemInSection.frame.maxY - adjustedFrame.height + sectionInset.bottom
 
             let y = min(maxY, max(minY, offsetY))
             adjustedFrame.origin.y = y
@@ -65,4 +65,5 @@ class StickyHeadersLayout: UICollectionViewFlowLayout {
 
         return attributesList
     }
+
 }
